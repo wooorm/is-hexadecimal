@@ -1,20 +1,8 @@
-/**
- * @author Titus Wormer
- * @copyright 2016 Titus Wormer
- * @license MIT
- * @module is-hexadecimal
- * @fileoverview Test suite for `is-hexadecimal`.
- */
-
 'use strict';
 
-/* eslint-env node */
-
-/* Dependencies. */
 var test = require('tape');
 var hexadecimal = require('./');
 
-/* Tests. */
 test('hexadecimal(character)', function (t) {
   t.ok(hexadecimal('a'));
   t.ok(hexadecimal('F'));
