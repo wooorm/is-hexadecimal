@@ -1,20 +1,16 @@
 # is-hexadecimal [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
 
-<!--lint disable heading-increment list-item-spacing-->
-
 Check if a character is hexadecimal.
 
 ## Installation
 
-[npm][npm-install]:
+[npm][]:
 
 ```bash
 npm install is-hexadecimal
 ```
 
 ## Usage
-
-Dependencies:
 
 ```javascript
 var hexadecimal = require('is-hexadecimal');
@@ -35,7 +31,10 @@ code at the first position (`string`), is hexadecimal.
 ## Related
 
 *   [`is-alphabetical`](https://github.com/wooorm/is-alphabetical)
+*   [`is-alphanumerical`](https://github.com/wooorm/is-alphabetical)
 *   [`is-decimal`](https://github.com/wooorm/is-decimal)
+*   [`is-whitespace-character`](https://github.com/wooorm/is-whitespace-character)
+*   [`is-word-character`](https://github.com/wooorm/is-word-character)
 
 ## License
 
@@ -51,7 +50,7 @@ code at the first position (`string`), is hexadecimal.
 
 [codecov]: https://codecov.io/github/wooorm/is-hexadecimal
 
-[npm-install]: https://docs.npmjs.com/cli/install
+[npm]: https://docs.npmjs.com/cli/install
 
 [license]: LICENSE
 
