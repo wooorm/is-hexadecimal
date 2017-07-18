@@ -15,15 +15,15 @@ npm install is-hexadecimal
 ```javascript
 var hexadecimal = require('is-hexadecimal');
 
-hexadecimal('a'); // true
-hexadecimal('0'); // true
-hexadecimal('G'); // false
-hexadecimal('💩'); // false
+hexadecimal('a'); //=> true
+hexadecimal('0'); //=> true
+hexadecimal('G'); //=> false
+hexadecimal('💩'); //=> false
 ```
 
 ## API
 
-### `hexadecimal(character)`
+### `hexadecimal(character|code)`
 
 Check whether the given character code (`number`), or the character
 code at the first position (`string`), is hexadecimal.
