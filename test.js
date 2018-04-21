@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var hexadecimal = require('./');
+var hexadecimal = require('.');
 
 test('hexadecimal(character)', function (t) {
   t.ok(hexadecimal('a'));
