@@ -4,19 +4,12 @@ node_js:
 - '8.0'
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
-  - provider: npm
-    email: tituswormer@gmail.com
-    api_key:
-      secure: 5k4zhTlbzIY+IUIeXoUBSFYvKEtTY0xMKmy4n2ss8FWeQioVnMqOeCcLWynJlk1d/Gm5u4mpSaOunzUJuscLeYY5JABfnfT0MHxNfQed99VP9j5P1Umyzuig4dw3Oju2qbkzJ+MAv8B7Gdkw3Jp7FyjknFwp3a2asKMLv1TpGq3NmMYhGtgADCM8Vq6xDbm1VglbwgYR0VoOR6he1HR4rBUMfaqqnxcBK9x5tCDp9cDJOyuMILYrMa6CXFrViwI1qQP8dmB6uiPX5ML0oCZmxAJtZXWx9zh8rKvhUNkIAlLW4U1TGzzPKGX5l7WmDzyKIXSepzKiU7QkIvqq7DetBbrSrGUfSSBue2FI6uMRXjO0jvMga+HeDuThwjGTCO5UrGwj6wy9dZgIfa3qJg7cp7N0PhgD7tASHqo2SGBaqxgR2+wJYuG7ArKehviZIT4AV6+SClOQJ4RlPo++c+lQdXKbAHI1ldQUPAlzQ3CzMXQU/MUecR+kOBcZb8qqcxl+TZ/Ju2YeOddgVwoY9xhSw1dNhPep4j/Kk89Zky/hMWEU2q334mxjx0bmcqCt+31e8sXCXtCDt6BpMe8/pjy7PeT77fsGRKoGoXKFqvW9mOu0T61WF7wxfIC5YKOQFaDr637++1LU9bzx6ElaoNuRZtiXT4V8wZ3dJ0C3AG2I880=
-    on:
-      tags: true
-      node: '4.0'
-  - provider: releases
-    api_key:
-      secure: S34ZQgbnHS3kvmliMSDw9ILpiopSx+ccYvTlz/PKPDa8WG3QfACUPTE/sZdWom47HaGUolgyBDfzOwzDsBHfmmNo9BPNPEEai9cCKWPXB02UgimG7CKcEBdH8WQJZQBP7lGfyPBSDq3UHDSR6W2zSBBSzGhNmxJOYsfoTlbT0Imix+yZ5DbBe3MV28cuHIri9ky4JMk9qv9EdJlXYfH73GeUshR/75veqdIuNk0+zI1qt4icvhg/+91Hq8hCrQY+fVoSHRY5dLzFFu85RJGODfi83hMNw8R00D1IomxF1oSps5s6CXPsTPjQ0PHlvRSQYPipAGhx7ZAU77KJ/4b5ElVDgJlZYIdkcERNg8yjYWqcb8qvitJ8LQlqk2nyIoCVULni25kCFtK0c2h+d7qbePXs+eJ81T8BJGXFILVcr9mxRoNGs/TY5/7nl+3OJNaCPdmjY+vsaFUDXkH7jXodnVYO3wLXR+r3L58kqTIYbhCNPkOzaQ0kyWUHB50BN1OAkrVa3i9nE3GUEyxMUSI+QNAuw3ZnBuXVPWKo+dqcqGABSzjVI3ABJRiH579BYBgOposnoQKb+Iq2KG8JaW+I6jEWmufxRST4N6CWky8kgEzzF/qdL+Obu5r8bK7P2VgkaekS6EYbyQ+4K26AxK7VlK++hEv1aKWVF/elWKsYXxo=
-    file:
-      - "is-hexadecimal.js"
-      - "is-hexadecimal.min.js"
-    on:
-      tags: true
-      node: '8.0'
+  provider: releases
+  api_key:
+    secure: S34ZQgbnHS3kvmliMSDw9ILpiopSx+ccYvTlz/PKPDa8WG3QfACUPTE/sZdWom47HaGUolgyBDfzOwzDsBHfmmNo9BPNPEEai9cCKWPXB02UgimG7CKcEBdH8WQJZQBP7lGfyPBSDq3UHDSR6W2zSBBSzGhNmxJOYsfoTlbT0Imix+yZ5DbBe3MV28cuHIri9ky4JMk9qv9EdJlXYfH73GeUshR/75veqdIuNk0+zI1qt4icvhg/+91Hq8hCrQY+fVoSHRY5dLzFFu85RJGODfi83hMNw8R00D1IomxF1oSps5s6CXPsTPjQ0PHlvRSQYPipAGhx7ZAU77KJ/4b5ElVDgJlZYIdkcERNg8yjYWqcb8qvitJ8LQlqk2nyIoCVULni25kCFtK0c2h+d7qbePXs+eJ81T8BJGXFILVcr9mxRoNGs/TY5/7nl+3OJNaCPdmjY+vsaFUDXkH7jXodnVYO3wLXR+r3L58kqTIYbhCNPkOzaQ0kyWUHB50BN1OAkrVa3i9nE3GUEyxMUSI+QNAuw3ZnBuXVPWKo+dqcqGABSzjVI3ABJRiH579BYBgOposnoQKb+Iq2KG8JaW+I6jEWmufxRST4N6CWky8kgEzzF/qdL+Obu5r8bK7P2VgkaekS6EYbyQ+4K26AxK7VlK++hEv1aKWVF/elWKsYXxo=
+  file:
+    - "is-hexadecimal.js"
+    - "is-hexadecimal.min.js"
+  on:
+    tags: true
+    node: '8.0'
