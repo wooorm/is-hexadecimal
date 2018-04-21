@@ -5,3 +5,4 @@ coverage/
 node_modules/
 is-hexadecimal.js
 is-hexadecimal.min.js
+yarn.lock
