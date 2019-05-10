@@ -1,6 +1,6 @@
 {
   "name": "is-hexadecimal",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Check if a character is hexadecimal",
   "license": "MIT",
   "keywords": [
