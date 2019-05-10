@@ -52,6 +52,6 @@ code at the first position (`string`), is hexadecimal.
 
 [npm]: https://docs.npmjs.com/cli/install
 
-[license]: LICENSE
+[license]: license
 
 [author]: http://wooorm.com
