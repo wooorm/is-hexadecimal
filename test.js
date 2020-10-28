@@ -3,7 +3,7 @@
 var test = require('tape')
 var hexadecimal = require('.')
 
-test('hexadecimal(character)', function(t) {
+test('hexadecimal(character)', function (t) {
   t.ok(hexadecimal('a'))
   t.ok(hexadecimal('F'))
   t.ok(hexadecimal('0'))
