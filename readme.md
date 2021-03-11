@@ -47,9 +47,9 @@ first position (`string`), is hexadecimal.
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/is-hexadecimal.svg
+[build-badge]: https://github.com/wooorm/is-hexadecimal/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/is-hexadecimal
+[build]: https://github.com/wooorm/is-hexadecimal/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/is-hexadecimal.svg
 
