@@ -9,6 +9,9 @@ Check if a character is hexadecimal.
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -18,20 +21,23 @@ npm install is-hexadecimal
 ## Use
 
 ```js
-var hexadecimal = require('is-hexadecimal')
+import {isHexadecimal} from 'is-hexadecimal'
 
-hexadecimal('a') // => true
-hexadecimal('0') // => true
-hexadecimal('G') // => false
-hexadecimal('💩') // => false
+isHexadecimal('a') // => true
+isHexadecimal('0') // => true
+isHexadecimal('G') // => false
+isHexadecimal('💩') // => false
 ```
 
 ## API
 
-### `hexadecimal(character|code)`
+This package exports the following identifiers: `isHexadecimal`.
+There is no default export.
+
+### `isHexadecimal(character|code)`
 
 Check whether the given character code (`number`), or the character code at the
-first position (`string`), is hexadecimal.
+first position (`string`), is isHexadecimal.
 
 ## Related
 

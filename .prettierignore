@@ -1,5 +1,2 @@
 coverage/
-is-hexadecimal.js
-is-hexadecimal.min.js
-*.json
 *.md

@@ -1,22 +1,20 @@
-'use strict'
+import test from 'tape'
+import {isHexadecimal} from './index.js'
 
-var test = require('tape')
-var hexadecimal = require('.')
-
-test('hexadecimal(character)', function (t) {
-  t.ok(hexadecimal('a'))
-  t.ok(hexadecimal('F'))
-  t.ok(hexadecimal('0'))
-  t.ok(hexadecimal('a'.charCodeAt(0)))
-  t.notOk(hexadecimal('G'))
-  t.notOk(hexadecimal('a'.charCodeAt(0) - 1))
-  t.notOk(hexadecimal('f'.charCodeAt(0) + 1))
-  t.notOk(hexadecimal('A'.charCodeAt(0) - 1))
-  t.notOk(hexadecimal('F'.charCodeAt(0) + 1))
-  t.notOk(hexadecimal('0'.charCodeAt(0) - 1))
-  t.notOk(hexadecimal('9'.charCodeAt(0) + 1))
-  t.notOk(hexadecimal('g'.charCodeAt(0)))
-  t.notOk(hexadecimal('💩'))
+test('isHexadecimal(character)', function (t) {
+  t.ok(isHexadecimal('a'))
+  t.ok(isHexadecimal('F'))
+  t.ok(isHexadecimal('0'))
+  t.ok(isHexadecimal('a'.charCodeAt(0)))
+  t.notOk(isHexadecimal('G'))
+  t.notOk(isHexadecimal('a'.charCodeAt(0) - 1))
+  t.notOk(isHexadecimal('f'.charCodeAt(0) + 1))
+  t.notOk(isHexadecimal('A'.charCodeAt(0) - 1))
+  t.notOk(isHexadecimal('F'.charCodeAt(0) + 1))
+  t.notOk(isHexadecimal('0'.charCodeAt(0) - 1))
+  t.notOk(isHexadecimal('9'.charCodeAt(0) + 1))
+  t.notOk(isHexadecimal('g'.charCodeAt(0)))
+  t.notOk(isHexadecimal('💩'))
 
   t.end()
 })
