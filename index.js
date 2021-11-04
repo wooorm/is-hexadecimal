@@ -6,7 +6,8 @@
  * @returns {boolean} Whether `character` is hexadecimal
  */
 export function isHexadecimal(character) {
-  var code = typeof character === 'string' ? character.charCodeAt(0) : character
+  const code =
+    typeof character === 'string' ? character.charCodeAt(0) : character
 
   return (
     (code >= 97 /* a */ && code <= 102) /* z */ ||
