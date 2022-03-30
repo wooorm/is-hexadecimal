@@ -10,8 +10,8 @@ export function isHexadecimal(character) {
     typeof character === 'string' ? character.charCodeAt(0) : character
 
   return (
-    (code >= 97 /* a */ && code <= 102) /* z */ ||
-    (code >= 65 /* A */ && code <= 70) /* Z */ ||
-    (code >= 48 /* A */ && code <= 57) /* Z */
+    (code >= 97 /* a */ && code <= 102) /* f */ ||
+    (code >= 65 /* A */ && code <= 70) /* F */ ||
+    (code >= 48 /* 0 */ && code <= 57) /* 9 */
   )
 }
