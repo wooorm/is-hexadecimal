@@ -7,11 +7,12 @@
  */
 export function isHexadecimal(character) {
   const code =
-    typeof character === 'string' ? character.charCodeAt(0) : character
+    typeof character === 'string' ? character.codePointAt(0) : character
 
   return (
-    (code >= 97 /* a */ && code <= 102) /* f */ ||
-    (code >= 65 /* A */ && code <= 70) /* F */ ||
-    (code >= 48 /* 0 */ && code <= 57) /* 9 */
+    code !== undefined &&
+    ((code >= 97 /* a */ && code <= 102) /* f */ ||
+      (code >= 65 /* A */ && code <= 70) /* F */ ||
+      (code >= 48 /* 0 */ && code <= 57)) /* 9 */
   )
 }
